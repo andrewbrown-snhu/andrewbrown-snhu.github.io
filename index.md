@@ -8,7 +8,7 @@
 
 <h2 id="codeReview">Code Review</h2>
 <p>The code review covers the existing code for all three artifacts and the enhancements that will be completed for each one. The link below is a video which goes over the code in each artifact.</p>
-<p><a href="https://youtu.be/UgWmZtTRz2I" target="_blank">Code Review</a></p>
+<p><a href="https://youtu.be/UgWmZtTRz2I" target="_blank">Watch the Code Review video</a></p>
 
 <h2 id="art1">Artifact 1 Enhancement - Software Design and Engineering</h2>
 The first artifact is the Treasure Hunt Game from the IT 140 class. The game consists of the user moving to different rooms to gather all the items to defect the zombie and was created in February of 2023. The artifact was selected to demonstrate successfully changing the programming language from Python to JavaScript and adding value by increasing the devices where the game can be implemented since JavaScript is integrated in many platforms including a web browser. 
