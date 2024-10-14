@@ -1,10 +1,8 @@
-# ePortfolio
-<ol>
-  <li><a href="#proSelf">Professional Self-Assessment</a></li>
-  <li><a href="#codeReview">Code Review</a></li>
-  <li><a href="#art1">Artifact 1 Enhancement - Software Design and Engineering</a></li>
-  <li><a href="#art2">Artifact 2 Enhancement - Algorithms and Data Structure</a></li>
-</ol>
+## Table of Contents
+1. <a href="#proSelf">Professional Self-Assessment</a>
+2. <a href="#codeReview">Code Review</a>
+3. <a href="#art1">Artifact 1 Enhancement - Software Design and Engineering</a>
+4. <a href="#art2">Artifact 2 Enhancement - Algorithms and Data Structure</a>
 
 <h2 id="proSelf">Professional Self-Assessment</h2>
 
