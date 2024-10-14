@@ -11,7 +11,7 @@
 <p><a href="https://youtu.be/UgWmZtTRz2I" target="_blank">Code Review</a></p>
 
 <h2 id="art1">Artifact 1 Enhancement - Software Design and Engineering</h2>
-The first artifact is the Treasure Hunt Game from the IT 140 class. The game consists of the user moving to different rooms to gather all the items to defect the zombie and was created in February of 2023. The artifact was selected to demonstrate successfully changing the programming language from Python to JavaScript and adding value by increasing the devices where the game can be implemented since JavaScript is integrated in many platforms including a web browser.
+The first artifact is the Treasure Hunt Game from the IT 140 class. The game consists of the user moving to different rooms to gather all the items to defect the zombie and was created in February of 2023. The artifact was selected to demonstrate successfully changing the programming language from Python to JavaScript and adding value by increasing the devices where the game can be implemented since JavaScript is integrated in many platforms including a web browser. 
 
 I demonstrated an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals by following industry-standard practices of structuring the code and providing comments throughout the code on the actions that will be taken. I also added comments for each function that explained the required inputs, and if the function returned a value, the comment explained what value would be returned when the function was called. Variable names were created that matched their purpose as far as the value they would hold. 
 
