@@ -1,4 +1,4 @@
-<h1>ePortfolio</h1>
+# ePortfolio
 <ol>
   <li><a href="#proSelf">Professional Self-Assessment</a></li>
   <li><a href="#codeReview">Code Review</a></li>
