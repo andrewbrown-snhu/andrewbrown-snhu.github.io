@@ -8,7 +8,7 @@
 <h2 id="proSelf">Professional Self-Assessment</h2>
 
 <h2 id="codeReview">Code Review</h2>
-<p>The code review covers the existing code for all three artifacts and the enhancements that will be completed for each one. The link below is a video which goes over the code in each artifact.</p>
+<p>The code review analyzes the code for all three artifacts by pointing out how the code works, how the code is structured, any issues in the code and then explains the enhancements that will be completed for each artifact. The link below is a video which goes over the code in each artifact.</p>
 <p><a href="https://youtu.be/UgWmZtTRz2I" target="_blank">Watch the Code Review video</a></p>
 
 <h2 id="art1">Artifact 1 Enhancement - Software Design and Engineering</h2>
