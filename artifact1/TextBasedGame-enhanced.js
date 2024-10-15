@@ -7,7 +7,7 @@
 Variables were moved to global scope so they can be accessed in functions defined further down in the code. The variable declarations were used based on industry standards and whether the variable value will change over time.
 */
 
-// Import the readline module from node 
+// Import the readline module from node to allow user input
 const readline = require('node:readline');
 const rl = readline.createInterface({
     input: process.stdin,
@@ -123,7 +123,7 @@ function get_item(item, inventory, current_room, rooms) {
 
 /*
  * Waits for input from the user. Using async to setup a promise state and
- * allow the intepretor to wait before continuing to the next line.
+ * allow the script to wait before continuing to the next line.
  */
 async function get_input() {
     return new Promise(resolve => {
@@ -179,5 +179,5 @@ async function main() {
     console.log("Thanks for playing the game. Hope you enjoyed it!")
 }
 
-// Call the main method
+// Call the main method to start the program
 main();
