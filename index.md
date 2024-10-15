@@ -24,4 +24,9 @@ The last change that was required was retrieving input from the user. Javascript
 Any variable definitions that were intended to the used globally in the functions were moved outside of the main method so they can be accessed easily within any of the functions. This also removes passing global variables between functions.
 One challenge I faced was re-learning how the code was set up originally. At first glance, I could figure out the main parts of the code and their actions, but some of the details required taking a closer look to gain a better understanding of the inner workings. This was especially important when converting the code to a different language. Another item that was learned was structuring the code in the way the language would normally have the code set up and using the correct built-in modules to receive user input. 
 
+Artifact Code Links:
+- [Text Based Game - Original](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/blob/d1033e1d345ebc86b00b9b674eb6ab21347dfe00/artifact1/TextBasedGame-original.py)
+- [Text Based Game - Enhanced](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/blob/d1033e1d345ebc86b00b9b674eb6ab21347dfe00/artifact1/TextBasedGame-enhanced.js)
+
+
 <h2 id="art2">Artifact 2 Enhancement - Algorithms and Data Structure</h2>
