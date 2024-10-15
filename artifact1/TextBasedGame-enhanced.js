@@ -2,7 +2,10 @@
 // September 22, 2024
 // Version 2.0.0
 // The game consists of moving to different rooms and gather all the items to defect a zombie in one of the rooms. If all items are gathered once entering the room with the zombie, then you win!
-// 
+
+/*
+Variables were moved to global scope so they can be accessed in functions defined further down in the code. The variable declarations were used based on industry standards and whether the variable value will change over time.
+*/
 
 // Import the readline module from node 
 const readline = require('node:readline');
@@ -100,7 +103,7 @@ function change_room(direction, current_room, rooms) {
 }
     
 /*
- * Verifies item can be retrieved and adds to inventory if it can
+ * Verifies item can be retrieved and adds to inventory if it's available
  * @param item - the item to retrieve
  * @param inventory - the inventory array
  * @param current_room - the current room the user is in
@@ -119,7 +122,8 @@ function get_item(item, inventory, current_room, rooms) {
 }
 
 /*
- * Waits for input from the user
+ * Waits for input from the user. Using async to setup a promise state and
+ * allow the intepretor to wait before continuing to the next line.
  */
 async function get_input() {
     return new Promise(resolve => {
