@@ -2,6 +2,7 @@
 // September 22, 2024
 // Version 2.0.0
 // The game consists of moving to different rooms and gather all the items to defect a zombie in one of the rooms. If all items are gathered once entering the room with the zombie, then you win!
+// 
 
 // Import the readline module from node 
 const readline = require('node:readline');
