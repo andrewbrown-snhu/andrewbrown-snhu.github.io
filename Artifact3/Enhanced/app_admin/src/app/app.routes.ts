@@ -1,0 +1,26 @@
+//============================================================================
+// Author      : Andrew Brown
+// Date        : August 18, 2024
+// Revised     : October 6, 2024
+// Version     : 2.0
+// Description : Application Routes
+//============================================================================
+
+import { Routes } from '@angular/router';
+import { AddTripComponent } from './add-trip/add-trip.component';
+import { TripListingComponent } from './trip-listing/trip-listing.component';
+import { EditTripComponent } from './edit-trip/edit-trip.component';
+import { LoginComponent } from './login/login.component';
+// V2: Added new component imports
+import { AccountComponent } from './account/account.component';
+import { AdduserComponent } from './adduser/adduser.component';
+
+export const routes: Routes = [
+    { path: 'add-trip', component: AddTripComponent},
+    { path: 'edit-trip', component: EditTripComponent},
+    { path: 'login', component: LoginComponent},
+    // V2: Added account profile and new user components
+    { path: 'account', component: AccountComponent},
+    { path: 'addaccount', component: AdduserComponent},
+    { path: '', component: TripListingComponent, pathMatch: 'full'}
+];

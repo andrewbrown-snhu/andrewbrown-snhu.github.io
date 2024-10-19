@@ -1,0 +1,51 @@
+<div class="col-md-4">
+    <h2 class="text-center">Account Profile</h2>
+
+    <div role="alert" class="alert alert-success" *ngIf="success">
+        User Added
+    </div>
+
+    <form [formGroup]="addUserForm" (ngSubmit)="onSubmit()" *ngIf="!success">
+        <div class="form-group mb-3">
+            <label>Name:</label>
+            <input type="text" formControlName="name" placeholder="Name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['name'].errors}">
+            <div *ngIf="submitted && f['name'].errors">
+                <div *ngIf="f['name'].errors?.['required']">
+                    Name is required
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="text" formControlName="email" placeholder="Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['email'].errors}">
+            <div *ngIf="submitted && f['email'].errors">
+                <div *ngIf="f['email'].errors?.['required']">
+                    Email is required
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Password:</label>
+            <input type="text" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['password'].errors}">
+            <div *ngIf="submitted && f['password'].errors">
+                <div *ngIf="f['password'].errors?.['required']">
+                    Password is required
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Confirm Password:</label>
+            <input type="text" formControlName="confirmpassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['confirmpassword'].errors}">
+            <div *ngIf="submitted && f['confirmpassword'].errors">
+                <div *ngIf="f['confirmpassword'].errors?.['required']">
+                    Confirm Password is required
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-info">Add User</button>
+    </form>
+</div>

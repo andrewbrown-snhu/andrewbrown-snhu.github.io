@@ -1,0 +1,21 @@
+Andrew Brown
+
+v1.0.0 (August 18, 2024)
+- Added initial files for travlr getaways
+
+v2.0.0 (October 6th, 2024)
+Angular changes
+- Added Angular Account Profile Page to allow modifying the profile information
+    * app_admin/src/app/account - front-end component for the profile form of the user
+- Added Angular New Account Page to register new accounts
+    * app_admin/src/app/adduser - front-end component for the register form of the user
+- Updated the Angular authentication service to support sending profile data and adding users to the server
+    * app_admin/src/app/services/authentication.service.ts
+- Added new routes for both the Account Profile and New Account pages
+- Added Links in the navbar component
+    * app_admin/src/app/navbar/navbar.component.html
+
+Express.js changes
+- Updated the authentication.js file to support PUT requests requests for updating profile information of the current user
+- Added the profile route to the index.js file for the server to accept the put request
+- Added link for Register Account and Profile in the navbar

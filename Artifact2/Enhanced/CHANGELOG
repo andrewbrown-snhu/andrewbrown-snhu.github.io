@@ -1,0 +1,9 @@
+Andrew Brown
+
+v1.0.0
+- Added initial files for CourseList
+
+v2.0.0
+- Removed the old sorting method
+- Added Merge Sort algorithm to improve time complexity
+- Optimized code to only sort the courses when new ones were added
