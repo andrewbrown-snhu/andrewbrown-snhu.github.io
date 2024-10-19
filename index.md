@@ -13,6 +13,9 @@
 <p><a href="https://youtu.be/UgWmZtTRz2I" target="_blank">Watch the Code Review video</a></p>
 
 <h2 id="art1">Artifact 1 Enhancement - Software Design and Engineering</h2>
+
+[Download Narrative](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/Artifact1/Artifact%201%20-%20Software%20Engineering%20and%20Design%20Narrative.docx)
+
 The first artifact is the Treasure Hunt Game from the IT 140 class. The game consists of the user moving to different rooms to gather all the items to defect the zombie and was created in February of 2023. The artifact was selected to demonstrate successfully changing the programming language from Python to JavaScript and adding value by increasing the devices where the game can be implemented since JavaScript is integrated in many platforms including a web browser. 
 
 I demonstrated an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals by following industry-standard practices of re-structuring the code in JavaScript and providing comments throughout the code on what actions the sections of code will complete. I also added comments for each function that explained the required inputs, and if the function returned a value, the comment explained what value would be returned when the function was called. 
@@ -31,6 +34,9 @@ One challenge I faced was re-learning how the code was set up originally. At fir
 
 
 <h2 id="art2">Artifact 2 Enhancement - Algorithms and Data Structure</h2>
+
+[Download Narrative](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/Artifact2/Artifact%202%20-%20Algorithms%20and%20Data%20Structure%20-%20Narrative.docx)
+
 The artifact for category two is the course list program from the CS300 class. The program reads a comma delimited file that contains the course number, name and prerequisites. When the user requests the application to display the list of courses, it will sort the list and print out the results.
 
 The reason the program was selected is that it uses a combination of data structures and algorithms to store the course list. The course list has a specific data structure to store the necessary data for each course, such as the course number, course name, and a list of the prerequisites. The course program also uses an algorithm to search for courses and to sort them in alphanumeric order by course number. In the current state, the sorting algorithm uses the built-in sorting that checks over the data as it is sorted, and for the dataset that is commonly used in the application, it will use the quicksort algorithm. 
@@ -73,6 +79,9 @@ I learned how different sort algorithms can be applied based on the data that ne
 - [CourseList - Enhanced](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/tree/3de5d313d20340da9c74a247fd3d49724ee9d171/Artifact2/Enhanced) | [[Download ZIP]](https://andrewbrown-snhu.github.io/Artifact2/Enhanced/%20Artifact%202%20-%20enhanced.zip)
 
 <h2 id="art3">Artifact 3 Enhancement - Databases</h2>
+
+[Download Narrative](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/Artifact3/Artifact%203%20-%20Databases%20-%20Narrative.docx)
+
 The artifact for category three is from the CS465 course which is full stack application to manage the Travlr website. The artifact contains a back-end server to handle API calls for the user to login as well as add and edit trip data. For the front-end side, an administration section built using Angular allow a user to log in and add additional trips or make changes to the existing trips. 
 
 The artifact was selected since it can demonstrate two of the course outcomes related to security and allowing multiple users in an organization to collaborate with the trips that are displayed to a consumer. Before the enhancements were made to the artifact, a user could register an account without being logged in first, which is a security risk, and this would give them unrestricted access to modify or add new trips to the website. Another issue with the current state of the artifact is a user has no way to update their password or profile information. The artifact was enhanced by adding a profile page for the user to update their account information and password. Another page was added to accept new registrations, which requires the user to be logged in first. In the code files, a changelog file was added to show each change that was made in the project.
