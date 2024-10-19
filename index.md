@@ -37,19 +37,35 @@ The reason the program was selected is that it uses a combination of data struct
 
 I designed and evaluated computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices by improving the sorting algorithm to use merge sort since the data set for the courses won’t be extremely large. After this change is made, the worst-case time complexity will improve from O(n2) to O(n*log(n)).
 
-To implement the change in the code, I first needed to figure out how the merge sort algorithm works by looking at the pseudocode and then figuring out how to map it to the vector that was already created. The merge sort algorithm essentially creates temporary vectors and compares a defined key to add the courses to the temporary vector in sorted order. In the pseudocode below, the merge function gets the start, middle, and end indexes of the array and fills the two temporary arrays: 
+To implement the change in the code, I first needed to figure out how the merge sort algorithm works by looking at the pseudocode and then figuring out how to map it to the vector that was already created. The merge sort algorithm essentially creates temporary vectors and compares a defined key to add the courses to the temporary vector in sorted order. In the pseudocode below, the merge function gets the start, middle, and end indexes of the array and fills the two temporary arrays:
+
+![Figure 1](https://andrewbrown-snhu.github.io/assets/images/figure-1.png)
 
 The second important function is the mergeSort function, which recursively calls itself in addition to the merge function to temporarily create and move the values in the main array:
+
+![Figure 2](https://andrewbrown-snhu.github.io/assets/images/figure-2.png)
  
 The final code that is implemented in the C++ application is very similar to the pseudocode, with additional language-specific code added. In the CourseList class, the original courseSort method was removed and replaced with the two new methods set as private visibility:
+
+![Figure 3](https://andrewbrown-snhu.github.io/assets/images/figure-3.png)
   
-One additional method, called sortCourses, was added, which starts the sorting, and the coursesSorted property was added to keep track of whether the courses were already sorted by the algorithm. From here, the merge function was translated from the pseudocode to C++, and the identifier was also added during the comparison part of the algorithm: 
+One additional method, called sortCourses, was added, which starts the sorting, and the coursesSorted property was added to keep track of whether the courses were already sorted by the algorithm. From here, the merge function was translated from the pseudocode to C++, and the identifier was also added during the comparison part of the algorithm:
+
+![Figure 4](https://andrewbrown-snhu.github.io/assets/images/figure-4.png)
 
 The mergeSort and sortCourses methods were added to handle the recursive calls and start the sorting:
+
+![Figure 5](https://andrewbrown-snhu.github.io/assets/images/figure-5.png)
+
+![Figure 6](https://andrewbrown-snhu.github.io/assets/images/figure-6.png)
  
 To prevent the vector from being sorted multiple times when the course list is displayed, the application will check the coursesSorted variable and only sort the courses if the operation was not completed. This was implemented in the printCourses method: 
+
+![Figure 7](https://andrewbrown-snhu.github.io/assets/images/figure-7.png)
+
 The courseSorted variable is set to false whenever a new course is added to the list, such as when the comma-delimited file is loaded. 
 I Designed, Developed, and Delivered professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts by documenting the changes within the code using inline comments and a header comment along with defining the exact changes in the narrative.
+
 I learned how different sort algorithms can be applied based on the data that needs to be sorted. There are cases where one algorithm is preferred over another based on how the data is structured and the size of the dataset. One challenge that I faced when changing the sort method was setting up the plan of how the pseudocode would be applied in the existing class and how it would successfully sort the vector. The pseudocode assumes that a simple array will be used for sorting, but the CourseList data structure is more complex than the simple array. After figuring out what identifier the algorithm uses to sort, the rest of the code was easy to apply. The other challenge was optimizing the code so as not to pass the array reference as a method parameter since this would be unnecessary with the CourseList class structure. As an industry standard, if a method is part of a class, then it should have visibility to other class members. Once the changes were made, additional testing and debugging were completed to ensure the application worked as expected.
 
 **Artifact Code Links:**
@@ -72,3 +88,7 @@ The process for creating the page to handle new user registration was almost the
 I developed a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources by implementing security controls to prevent other users or guests from modifying another user's profile information. The same security control is added to prevent a guest user from creating new accounts. For both cases, the user is now required to be logged in with a security token that is generated from the server. If the user is not logged in, they will now get an error if they try to register a new account or update their profile information.
 
 When adding the enhancements to the artifact, there were a few discoveries. The first one is figuring out how the authentication service handles reading the token so it can keep track of which user is making the request. Once that is figured out, the enhancement of updating the profile information can be added. The second discovery was making sure the mongoose driver was updating the correct record. At first, the record would appear to be updated, but it wasn't taking the correct input for the user that was logged in, and this would create a security issue. After revising the code to only use the ID from the user's token, the security bug was fixed, and the correct record was updated.
+
+**Artifact Code Links:**
+- [Travlr Admin Panel - Original](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/tree/ad53a56c997aed26ea754f9be3e0eac01eaee4c3/Artifact3/Original) | [[Download Zip]](https://andrewbrown-snhu.github.io/Artifact3/Original/Artifact%203%20-%20original.zip)
+- [Travlr Admin Panel - Enhanced](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/tree/ad53a56c997aed26ea754f9be3e0eac01eaee4c3/Artifact3/Enhanced) | [[Download ZIP]](https://andrewbrown-snhu.github.io/Artifact3/Enhanced/Artifact%203%20-%20enhanced.zip)
