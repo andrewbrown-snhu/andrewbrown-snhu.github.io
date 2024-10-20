@@ -1,5 +1,5 @@
 <div class="col-md-4">
-    <h2 class="text-center">Account Profile</h2>
+    <h2 class="text-center">Add New User</h2>
 
     <div role="alert" class="alert alert-success" *ngIf="success">
         User Added
@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mb-3">
             <label>Email:</label>
             <input type="text" formControlName="email" placeholder="Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['email'].errors}">
             <div *ngIf="submitted && f['email'].errors">
@@ -28,21 +28,27 @@
 
         <div class="form-group mb-3">
             <label>Password:</label>
-            <input type="text" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['password'].errors}">
+            <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['password'].errors}">
             <div *ngIf="submitted && f['password'].errors">
                 <div *ngIf="f['password'].errors?.['required']">
                     Password is required
                 </div>
             </div>
+            <div *ngIf="passwordInvalid">
+                Passwords must match!
+            </div>
         </div>
 
         <div class="form-group mb-3">
             <label>Confirm Password:</label>
-            <input type="text" formControlName="confirmpassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['confirmpassword'].errors}">
+            <input type="password" formControlName="confirmpassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['confirmpassword'].errors}">
             <div *ngIf="submitted && f['confirmpassword'].errors">
                 <div *ngIf="f['confirmpassword'].errors?.['required']">
                     Confirm Password is required
                 </div>
+            </div>
+            <div *ngIf="passwordInvalid">
+                Passwords must match!
             </div>
         </div>
 

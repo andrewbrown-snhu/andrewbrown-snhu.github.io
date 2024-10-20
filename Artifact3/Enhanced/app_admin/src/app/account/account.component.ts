@@ -6,9 +6,10 @@
 //============================================================================
 
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthenticationService } from '../services/authentication.service';
+import { BROWSER_STORAGE } from '../storage';
 
 @Component({
     selector: 'app-account',
@@ -22,8 +23,9 @@ export class AccountComponent {
     profileForm!: FormGroup;
     submitted:boolean = false;
     success:boolean = false;
+    passwordInvalid:boolean = false;
 
-    constructor(private fb:FormBuilder, private authService:AuthenticationService) {
+    constructor(@Inject(BROWSER_STORAGE) private storage: Storage, private fb:FormBuilder, private authService:AuthenticationService) {
         this.profileForm = this.fb.group({
             'name': ['', Validators.required],
             'email': ['', Validators.required],
@@ -48,9 +50,27 @@ export class AccountComponent {
     onSubmit() {
         this.submitted = true;
 
-        this.authService.setUserInfo(this.profileForm.get('email')?.value, this.profileForm.get('name')?.value).subscribe({
+        if (!this.profileForm.valid) {
+            return;
+        }
+
+        if (this.profileForm.get('password')?.value && this.profileForm.get('confirmpassword')?.value
+            && this.profileForm.get('password')?.value != this.profileForm.get('confirmpassword')?.value) {
+            this.passwordInvalid = true;
+            return;
+        } else {
+            this.passwordInvalid = false;
+        }
+
+        this.authService.setUserInfo(this.profileForm.get('email')?.value, this.profileForm.get('name')?.value, this.profileForm.get('password')?.value, this.profileForm.get('confirmpassword')?.value).subscribe({
             next: (data: any) => {
                 this.success = true;
+
+                this.profileForm.get('password')?.setValue('');
+                this.profileForm.get('confirmpassword')?.setValue('');
+
+                this.storage.setItem('travlr-name', data.name);
+                this.storage.setItem('travlr-email', data.email);
             }
         });
     }

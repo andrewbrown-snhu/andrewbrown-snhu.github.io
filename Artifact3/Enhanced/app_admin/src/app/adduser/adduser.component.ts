@@ -6,13 +6,14 @@
 //============================================================================
 
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthenticationService } from '../services/authentication.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-adduser',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './adduser.component.html',
   styleUrl: './adduser.component.css'
 })
@@ -21,6 +22,7 @@ export class AdduserComponent {
     addUserForm!: FormGroup;
     submitted:boolean = false;
     success:boolean = false;
+    passwordInvalid:boolean = false;
 
     constructor(private fb:FormBuilder, private authService:AuthenticationService) {
         this.addUserForm = this.fb.group({
@@ -34,6 +36,17 @@ export class AdduserComponent {
     // Submit the form
     onSubmit() {
         this.submitted = true;
+
+        if (!this.addUserForm.valid) {
+            return;
+        }
+
+        if (this.addUserForm.get('password')?.value != this.addUserForm.get('confirmpassword')?.value) {
+            this.passwordInvalid = true;
+            return;
+        } else {
+            this.passwordInvalid = false;
+        }
 
         this.authService.addUser(this.addUserForm.get('email')?.value, this.addUserForm.get('name')?.value, this.addUserForm.get('password')?.value).subscribe({
             next: (data: any) => {

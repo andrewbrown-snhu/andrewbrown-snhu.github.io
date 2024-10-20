@@ -22,7 +22,8 @@ export class JwtInterceptor implements HttpInterceptor {
     var isAuthAPI: boolean;
     // console.log('Interceptor::URL' + request.url);
     if (request.url.startsWith('login') ||
-      request.url.startsWith('register')) {
+      request.url.startsWith('register') ||
+      request.url.startsWith('profile')) {
       isAuthAPI = true;
     }
     else {

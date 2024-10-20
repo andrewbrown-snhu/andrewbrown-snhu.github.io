@@ -67,17 +67,31 @@ export class AuthenticationService {
     // isLoggedIn.
     public getCurrentUser(): User {
         const token: string = this.getToken();
-        const { email, name } = JSON.parse(atob(token.split('.')[1]));
+        let { email, name } = JSON.parse(atob(token.split('.')[1]));
+
+        if (this.storage.getItem('travlr-name')) {
+            name = this.storage.getItem('travlr-name');
+        }
+
+        if (this.storage.getItem('travlr-email')) {
+            email = this.storage.getItem('travlr-email');
+        }
+
         return { email, name } as User;
     }
 
-    public setUserInfo(email:string, name:string):Observable<any> {
-        let data = {
+    public setUserInfo(email:string, name:string, password:string|null = null, confirmPassword:string|null = null):Observable<any> {
+        let data:any = {
             'email': email,
             'name': name
         };
 
-        return this.http.put('profile', data);
+        if (password && confirmPassword) {
+            data.password = password;
+            data.confirmpassword = confirmPassword;
+        }
+
+        return this.http.put('http://localhost:3000/api/profile', data);
     }
 
     public addUser(email:string, name:string, password:string):Observable<any> {
@@ -87,7 +101,7 @@ export class AuthenticationService {
             'password': password
         };
 
-        return this.http.post('register', data);
+        return this.http.post('http://localhost:3000/api/register', data);
     }
 
     // Login method that leverages the login method in tripDataService
