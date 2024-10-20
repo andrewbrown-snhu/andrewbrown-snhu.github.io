@@ -25,7 +25,7 @@ The artifacts presented in the portfolio demonstrate applied computer science sk
 
 <h2 id="art1">Artifact 1 Enhancement - Software Design and Engineering</h2>
 
-[Download the Full Narrative](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/Artifact1/Artifact%201%20-%20Software%20Engineering%20and%20Design%20Narrative.docx)
+[Download the Full Narrative](https://andrewbrown-snhu.github.io/Artifact1/Artifact%201%20-%20Software%20Engineering%20and%20Design%20Narrative.docx)
 
 The first artifact is the Treasure Hunt Game from the IT 140 class and was created in February of 2023. The game consists of the player moving between different rooms to gather all the items and defect the zombie. The artifact was selected to demonstrate successfully changing the programming language from Python to JavaScript and adding value by increasing the devices where the game can be implemented since JavaScript is integrated in many platforms including a web browser.
 
@@ -52,7 +52,7 @@ One challenge I faced was re-learning how the code was set up originally. At fir
 
 <h2 id="art2">Artifact 2 Enhancement - Algorithms and Data Structure</h2>
 
-[Download the Full Narrative](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/Artifact2/Artifact%202%20-%20Algorithms%20and%20Data%20Structure%20-%20Narrative.docx)
+[Download the Full Narrative](https://andrewbrown-snhu.github.io/Artifact2/Artifact%202%20-%20Algorithms%20and%20Data%20Structure%20-%20Narrative.docx)
 
 The artifact for category two is the course list program from the CS300 class that was created in December of 2023. The program reads a comma-delimited file that contains the course number, name, and prerequisites. When the user requests the application to display the list of courses, it will sort the list and print out the results.
 
@@ -98,7 +98,7 @@ I learned how different sort algorithms can be applied based on the data that ne
 
 <h2 id="art3">Artifact 3 Enhancement - Databases</h2>
 
-[Download the Full Narrative](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/Artifact3/Artifact%203%20-%20Databases%20-%20Narrative.docx)
+[Download the Full Narrative](https://andrewbrown-snhu.github.io/Artifact3/Artifact%203%20-%20Databases%20-%20Narrative.docx)
 
 The artifact for category three is from the CS465 course called the Travlr Admin Panel. The artifact is a full-stack application created in August of 2024 to manage the traveling packages on their website. It contains a back-end server to handle API calls for the user to login as well as add and edit trip data that is displayed for a consumer. For the front-end side, an administration section built using Angular allows a user to log in and add additional trips or make changes to the existing trips. 
 
