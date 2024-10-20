@@ -110,7 +110,11 @@ Angular uses components for both page displays and separate sections within the 
 
 The front-end portion for updating the account information is mostly complete at this stage, but the back-end would need to be modified to accept the API requests from the front-end. In the controller for authentication, an additional method was added to accept and validate the profile form data and update the database accordingly. Once the API requests are created, the front-end application can be modified to send the form data to the back-end server. The standard practice for sending data to an API in Angular is to use a service that is injected into the component. The project already had a service setup, so the only change needed was to add the additional code for sending the request to the back-end API, which completes both the front-end and back-end portions. 
 
+![Figure](https://andrewbrown-snhu.github.io/assets/images/figure-11.png)
+
 The process for creating the page to handle new user registration was almost the same as creating the page to update the profile. A new component was created and added to the route list, and an identical form code was placed in the new component. The back-end already had code written to handle new user registration, and the service in Angular had unused code for sending the form data to the API, leaving the only change to inject the service in the component to complete the process.
+
+![Figure](https://andrewbrown-snhu.github.io/assets/images/figure-12.png)
 
 I developed a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources by implementing security controls to prevent other users or guests from modifying another user's profile information. The same security control is added to prevent a guest user from creating new accounts. For both cases, the user is now required to be logged in with a security token that is generated from the server. If the user is not logged in, they will now get an error if they try to register a new account or update their profile information.
 
