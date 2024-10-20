@@ -1,3 +1,7 @@
+<style>
+ h2 { margin-top: 4rem; }
+</style>
+
 # Andrew Brown ePortfolio
 ## Table of Contents
 1. <a href="#proSelf">Professional Self-Assessment</a>
