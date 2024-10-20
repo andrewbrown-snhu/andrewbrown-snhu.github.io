@@ -33,11 +33,17 @@ I demonstrated an ability to use well-founded and innovative techniques, skills,
 
 One of the first changes was moving global variables outside of the main method so they can be easily accessed in any of the functions that are called throughout the application. This helped removed unnecessary parameters from the functions since the global variables will no longer be required to be passed over.
 
+![Figure](https://andrewbrown-snhu.github.io/assets/images/figure-8.png)
+
 Another change involved converting all language-specific statements to the equivalent JavaScript language statements. This includes the “if” statements, arrays, loops, print statements, and code format. 
 
 The last change that was required was retrieving input from the user. JavaScript has a built-in module to achieve this, and once the module is imported, additional code is needed to set up a JavaScript promise and callback functions. Both the main and get_input methods are set up as blocking functions to prevent the application from going into an infinite loop. After this is in place, the application waits for the user to enter their next command and runs the correct code based on the command entered.
-Any variable definitions that were intended to be used globally in the functions were moved outside of the main method so they could be accessed easily within any of the functions. This also removes the requirement of passing global variables between functions.
-One challenge I faced was re-learning how the code was set up originally. At first glance, I could figure out the main parts of the code and their actions, but some of the details required taking a closer look to gain a better understanding of the inner workings. This was especially important when converting the code to a different language. Another item that was learned was structuring the code in the way the language would normally have the code set up and using the correct built-in modules to receive user input.
+
+![Figure](https://andrewbrown-snhu.github.io/assets/images/figure-9.png)
+
+![Figure](https://andrewbrown-snhu.github.io/assets/images/figure-10.png)
+
+One challenge I faced was re-learning how the code was set up originally. At first glance, I could figure out the main parts of the code and their actions, but some of the details required taking a closer look to gain a better understanding of the inner workings. This was especially important when converting the code to a different language. Something else I learned was structuring the code in the way the language would normally have the code set up and using the correct built-in modules to receive user input.
 
 **Artifact Code Links:**
 - [Text Based Game - Original](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/blob/3de5d313d20340da9c74a247fd3d49724ee9d171/Artifact1/Original/TextBasedGame-original.py) <span style="margin-left:25px;"><a href="https://andrewbrown-snhu.github.io/Artifact1/Enhanced/Artifact%201%20-%20Enhanced.zip">[Download Zip]</a></span>
