@@ -40,8 +40,8 @@ Any variable definitions that were intended to be used globally in the functions
 One challenge I faced was re-learning how the code was set up originally. At first glance, I could figure out the main parts of the code and their actions, but some of the details required taking a closer look to gain a better understanding of the inner workings. This was especially important when converting the code to a different language. Another item that was learned was structuring the code in the way the language would normally have the code set up and using the correct built-in modules to receive user input.
 
 **Artifact Code Links:**
-- [Text Based Game - Original](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/blob/3de5d313d20340da9c74a247fd3d49724ee9d171/Artifact1/Original/TextBasedGame-original.py)
-- [Text Based Game - Enhanced](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/blob/3de5d313d20340da9c74a247fd3d49724ee9d171/Artifact1/Enhanced/TextBasedGame-enhanced.js)
+- [Text Based Game - Original](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/blob/3de5d313d20340da9c74a247fd3d49724ee9d171/Artifact1/Original/TextBasedGame-original.py) <span style="margin-left:25px;"><a href="https://andrewbrown-snhu.github.io/Artifact1/Enhanced/Artifact%201%20-%20Enhanced.zip">[Download Zip]</a></span>
+- [Text Based Game - Enhanced](https://github.com/andrewbrown-snhu/andrewbrown-snhu.github.io/blob/3de5d313d20340da9c74a247fd3d49724ee9d171/Artifact1/Enhanced/TextBasedGame-enhanced.js) <span style="margin-left:25px;"><a href="https://andrewbrown-snhu.github.io/Artifact1/Original/Artifact%201%20-%20Original.zip">[Download Zip]</a></span>
 
 
 <h2 id="art2">Artifact 2 Enhancement - Algorithms and Data Structure</h2>
