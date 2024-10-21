@@ -21,7 +21,7 @@ Security is always a top priority for any code that is written. Some programs wi
 The artifacts presented in the portfolio demonstrate applied computer science skills in working applications. For each artifact, an original version is presented along with the enhanced version, which will show changes in the code to complete a specific outcome. In the first artifact, the Text Based Game was rewritten in JavaScript to increase portability. The second artifact optimizes the sorting algorithm for the Course List. The third artifact adds additional features for users to update their profiles and add new users. All three of the artifact enhancements show skills within multiple areas of computer science.
 
 <h2 id="codeReview">Code Review</h2>
-<p>The code review analyzes the code for all three artifacts by pointing out how the code works, how the code is structured, any issues in the code and then explains the enhancements that will be completed for each artifact. The link below is a video which goes over the code in each artifact.</p>
+<p>The code review is an overall look at the code for all three artifacts by pointing out how the code works, how the code is structured, any issues in the code, and the enhancements that will be completed for each artifact. The link below is a video which goes over the code in each artifact.</p>
 <p><a href="https://youtu.be/UgWmZtTRz2I" target="_blank">Watch the Code Review video</a></p>
 
 <h2 id="art1">Artifact 1 Enhancement - Software Design and Engineering</h2>
